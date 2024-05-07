@@ -3,7 +3,7 @@ montecarlo
 [//]: # (Badges)
 [![GitHub Actions Build Status](https://github.com/MyaBird/montecarlo/workflows/CI/badge.svg)](https://github.com/MyaBird/montecarlo/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/MyaBird/montecarlo/branch/main/graph/badge.svg)](https://codecov.io/gh/MyaBird/montecarlo/branch/main)
-[![docs](https://codecov.io/gh/MyaBird/montecarlo/branch/main/docs/badge.svg)](https://montecarlo-myabird.readthedocs.io/en/latest/)
+[![docs]](https://montecarlo-myabird.readthedocs.io/en/latest/)
 
 
 A Python package for montecarlo
