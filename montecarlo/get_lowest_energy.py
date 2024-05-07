@@ -2,6 +2,8 @@ from .bitstring import BitString
 from .isinghamiltonian import IsingHamiltonian as ham
 
 def get_lowest_energy_config(self):
+        """Class to determine the lowest energy configuration.
+        """
         my_bs = BitString(self.N)
         x = [] # Store list of indices
         y = [] # Store list of energies

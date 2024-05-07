@@ -15,6 +15,7 @@ of an array of qubits with given couplings.
 
    getting_started
    api
+   modules
 
 
 
