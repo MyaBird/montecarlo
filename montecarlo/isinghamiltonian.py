@@ -152,3 +152,33 @@ class IsingHamiltonian:
         HC = (EE - E * E) / (T * T)
         MS = (MM - M * M) / T
         return E, M, HC, MS
+    
+    def get_lowest_energy_config(self):
+        my_bs = BitString(self.N)
+        x = [] # Store list of indices
+        y = [] # Store list of energies
+        xmin = None # configuration of minimum energy configuration
+        emin = 0 # minimum of energy
+        J = self.J
+
+        for i in range(2 ** self.N):
+            my_bs.set_int_config(i)
+            if self.energy(my_bs) < emin:
+                emin = self.energy(my_bs)
+                xmin = i
+
+        # set the classical bitstring to an integer value of xmin
+        my_bs.set_int_config(xmin)
+
+        # change the classical bitstring into quantum
+        for b in range(len(my_bs)):
+            my_bs.flip_site(b)
+
+        # change bs order to fit qiskit standards
+        bs_list = []
+        for i in my_bs.config:
+            bs_list.insert(0, i)
+
+        my_bs.config = np.array(bs_list)
+
+        return emin, my_bs

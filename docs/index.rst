@@ -6,6 +6,9 @@
 Welcome to montecarlo's documentation!
 =========================================================
 
+montecarlo is a python package designed to analyze the Ising Hamiltonian
+of an array of qubits with given couplings. 
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

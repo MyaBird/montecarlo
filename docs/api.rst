@@ -4,4 +4,6 @@ API Documentation
 .. autosummary::
    :toctree: autosummary
 
-   montecarlo.canvas
+   montecarlo.isinghamiltonian
+   montecarlo.bitstring
+   montecarlo.get_lowest_energy
